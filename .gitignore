@@ -1,0 +1,6 @@
+node_modules/
+.wrangler/
+.dev.vars
+worker/wrangler.toml
+worker/.relay/
+__pycache__/

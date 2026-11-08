@@ -1,0 +1,16 @@
+name = "tg-ask-relay"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "tg-ask"
+database_id = "REPLACE_ME"  # deploy.sh fills this in
+
+# Hourly cleanup (see `scheduled` in src/index.js).
+[triggers]
+crons = ["7 * * * *"]
+
+[observability]
+enabled = true
